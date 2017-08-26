@@ -1,0 +1,29 @@
+
+<h2>大连美食排行榜</h2>
+
+<button (click)="asc()" class="push_button blue">正序</button>
+<button (click)="desc()">逆序</button>
+<button (click)="random()">随机</button>
+<table class="gridtable">
+<tr>
+<th>序号</th>
+<th>店家名称</th>
+<th>人均消费</th>
+<th>地址</th>
+</tr>
+<tr *ngFor="let shop of shops">
+<td>{{shop.index}}</td>
+<td>{{shop.name}}</td>
+<td>{{shop.price}}</td>
+<td>{{shop.address}}</td>
+</tr>
+</table>
+<br>
+<hr>
+
+<h4>游友点评</h4>
+<ul>
+    <li>E23****3176点评：喜欢胡同里，菜量很大。</li>
+    <li>A55****9527点评：喜来稀肉人有点多，每次去都要排队。</li>
+    <li>B68****3344点评：收藏了，有空去吃吃看。</li>
+</ul>
